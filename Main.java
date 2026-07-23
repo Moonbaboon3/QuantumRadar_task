@@ -6,7 +6,7 @@ public class Main {
         ArrayList<Car>cars = new ArrayList<>();
         cars.add(new PrivateCar("ABC1234","7/24/2026", 92, false));
         for(Car c : cars){
-          String result =  c.getResults();
+          String result =  c.getReport();
           System.out.println(result);
         }
 

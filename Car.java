@@ -59,7 +59,7 @@ public abstract class Car {
         for(String v : violations){
             body =  STR."\{body}- \{v}\n";
         }
-        return STR."Traffic fine for car \{this.plateNum}\nTotal amount: \{this.totalFees}\nViolatoins:\n\{body}";
+        return STR."Traffic fine for car \{this.plateNum}\nTotal amount: \{this.totalFees}\nViolations:\n\{body}";
     }
 
 }
