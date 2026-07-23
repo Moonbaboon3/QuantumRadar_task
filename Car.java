@@ -39,7 +39,7 @@ public abstract class Car {
 
     void checkSpeed(){
         if(this.speed > this.getSpeedLimit()){
-            violations.add(STR."speed of \{this.speed} exceeded max allowed \{this.getSpeedLimit()} : \{getSpeedFee()}EGP");
+            violations.add(STR."speed of \{this.speed} exceeded max allowed \{this.getSpeedLimit()} : \{this.getSpeedFee()}EGP");
             totalFees += getSpeedFee();
         }
     }

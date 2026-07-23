@@ -24,12 +24,6 @@ public class PrivateCar extends  Car{
         this.carType = CarTypes.Private;
     }
 
-    void checkSeatbeltStatus(){
-        if(!this.isSeatFastened){
-            violations.add(STR."Seatbelt not fastned : \{seatBeltFee} EGP");
-            totalFees += seatBeltFee;
-        }
-    }
     @Override
     public ArrayList<String> check_violations() {
         checkSeatbeltStatus();

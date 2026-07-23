@@ -4,7 +4,6 @@ public class Bus extends Car{
     private final int maxSpeed = 50;
     private final int speedFee = 300;
     private final int seatBeltFee = 100;
-    ArrayList<String> violations = new ArrayList<>();
 
     @Override
     int getSpeedLimit() {
@@ -24,12 +23,7 @@ public class Bus extends Car{
         this.carType = CarTypes.Bus;
     }
 
-    void checkSeatbeltStatus(){
-        if(!this.isSeatFastened){
-            violations.add(STR."Seatbelt not fastned : \{seatBeltFee} EGP");
-            totalFees += seatBeltFee;
-        }
-    }
+
     @Override
     public ArrayList<String> check_violations() {
         checkSeatbeltStatus();
